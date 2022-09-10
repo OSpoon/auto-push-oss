@@ -1,5 +1,7 @@
 name: "auto-push-oss"
 description: "自动推动目录到 OSS"
+icon: "arrow-up-circle"
+color: "green"
 # 定义输入参数
 inputs:
   root:

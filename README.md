@@ -6,7 +6,7 @@
 
 |参数|描述|
 |----|----|
-|`root`|待推送路径|
+|`root`|待推送文件夹|
 |`bucket`|oss bucket|
 |`region`|oss region|
 |`accessKeyId`|oss accessKeyId|
@@ -17,7 +17,7 @@
 ```yaml
 uses: OSpoon/auto-push-oss@main
 with:
-  root: ./public
+  root: public
   bucket: it200
   region: oss-cn-beijing
   accessKeyId: ${{secrets.accessKeyId}}

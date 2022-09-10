@@ -18,7 +18,7 @@ const client = new OSS({
   accessKeySecret,
 });
 
-const rootPath = root || "./dist";
+const rootPath = root || "dist";
 console.log("ROOT PATH : ", rootPath);
 
 const isHave = fs.existsSync(rootPath);

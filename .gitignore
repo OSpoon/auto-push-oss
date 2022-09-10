@@ -80,7 +80,8 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# 资产需要放开
+# dist
 
 # Gatsby files
 .cache/

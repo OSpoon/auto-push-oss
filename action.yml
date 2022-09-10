@@ -1,0 +1,24 @@
+name: "auto-push-oss"
+description: "自动推动目录到 OSS"
+# 定义输入参数
+inputs:
+  root:
+    description: "待推送路径"
+    required: true
+  bucket:
+    description: "oss bucket"
+    required: true
+  region:
+    description: "oss region"
+    required: true
+  accessKeyId:
+    description: "oss accessKeyId"
+    required: true
+  accessKeySecret:
+    description: "oss accessKeySecret"
+    required: true
+runs:
+  # 脚本运行环境（按官方文档给的12版本来使用）
+  using: "node12"
+  # 脚本执行入口（这里我们要用@vercel/ncc编译）
+  main: "dist/index.js"

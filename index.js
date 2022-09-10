@@ -19,7 +19,6 @@ const client = new OSS({
 });
 
 const rootPath = root || "dist";
-console.log("ROOT PATH : ", rootPath);
 
 const isHave = fs.existsSync(rootPath);
 if (!isHave) {
@@ -43,9 +42,7 @@ function readFileSync(filepath) {
 }
 
 function put(filepath) {
-  console.log('filepath',filepath);
   const p = filepath.replace(rootPath, "").substr(1);
-  console.log('p',p);
   return client.put(p.replace("\\", "/"), filepath);
 }
 

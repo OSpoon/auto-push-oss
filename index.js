@@ -19,6 +19,12 @@ const client = new OSS({
 });
 
 const rootPath = path.resolve(__dirname, root || "./dist");
+console.log("ROOT PATH : ", rootPath);
+
+const isHave = fs.existsSync(rootPath);
+if (!isHave) {
+  throw new Error("路劲不存在");
+}
 
 let filepaths = [];
 let putCount = 0;

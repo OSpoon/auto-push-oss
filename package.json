@@ -17,7 +17,7 @@
     "url": "https://github.com/OSpoon/auto-push-oss/issues"
   },
   "homepage": "https://github.com/OSpoon/auto-push-oss#readme",
-  "devDependencies": {
+  "dependencies": {
     "@actions/github": "^5.0.3",
     "@vercel/ncc": "^0.34.0",
     "ali-oss": "^6.17.1"

@@ -1,6 +1,6 @@
 # auto-push-oss
 
-自动推动目录到 OSS
+方便将常见的 Vue 项目,VuePress 项目构建到根目录的 dist 文件夹推送到指定从 oss 桶的根目录,特别适合在 oss 托管 VuePress 博客~
 
 ## Inputs
 

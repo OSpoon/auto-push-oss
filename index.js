@@ -43,7 +43,9 @@ function readFileSync(filepath) {
 }
 
 function put(filepath) {
+  console.log('filepath',filepath);
   const p = filepath.replace(rootPath, "").substr(1);
+  console.log('p',p);
   return client.put(p.replace("\\", "/"), filepath);
 }
 

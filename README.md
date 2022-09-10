@@ -15,7 +15,7 @@
 ## Example usage
 
 ```yaml
-uses: OSpoon/auto-push-oss@master
+uses: OSpoon/auto-push-oss@main
 with:
   root: ./public
   bucket: it200
